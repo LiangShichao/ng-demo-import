@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<script> var __basePath = ''; </script>
+<style>
+    html, body {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        box-sizing: border-box;
+        -webkit-overflow-scrolling: touch;
+    }
+    html {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 0;
+        overflow: auto;
+    }
+    body {
+        padding: 1rem;
+        overflow: auto;
+    }
+</style>
+	<script src="https://unpkg.com/xlsx-style@0.8.13/dist/xlsx.full.min.js"></script>
+    <script src="https://unpkg.com/ag-grid-community@21.2.1/dist/ag-grid-community.min.js"></script></head>
+<body>
+
+<input id="selectedFile" type="file" style="margin-bottom: 5px"/>
+<button onclick="importExcel()">Import Excel</button>
+<div id="myGrid" style="height: calc(100% - 25px); width:100%;" class="ag-theme-balham"></div>
+
+    <script src="example.js"></script>
+</body>
+</html>
